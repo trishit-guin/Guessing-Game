@@ -19,7 +19,7 @@ while choice in 'yesYES':
 			break
 	if guess == number:
 		if number_of_guesses == 1:
-			print('Excellent!\n You guessed the number in first try. ')
+			print('Excellent!\nYou guessed the number in first try. ')
 		elif number_of_guesses == 2:
 			print('You guessed the number in second try. ')
 		else:
@@ -30,3 +30,4 @@ while choice in 'yesYES':
 	choice = input('\nDo you want to play again: Yes/No')
 	if choice in 'yesYES':
 		number_of_guesses = 0
+		number = random.randint(1, 10)
